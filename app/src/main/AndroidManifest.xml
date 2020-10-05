@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.shubhangi.covidstatus">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <uses-feature android:name="android.hardware.screen.portrait" />
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <meta-data android:name="com.google.firebase.messaging.default_notification_icon" android:resource="@drawable/appicon" />
+        <activity android:name="com.shubhangi.covidstatus.WorldDataActivity" />
+        <activity android:name="com.shubhangi.covidstatus.PerDistrictData" />
+        <activity android:name="com.shubhangi.covidstatus.DistrictwiseDataActivity" />
+        <activity
+            android:name="com.shubhangi.covidstatus.PerCountryData"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name="com.shubhangi.covidstatus.CountrywiseDataActivity"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name="com.shubhangi.covidstatus.PerStateData"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name="com.shubhangi.covidstatus.StatewiseDataActivity"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name="com.shubhangi.covidstatus.MainActivity"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name="com.shubhangi.covidstatus.SplashActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme2"
+            tools:ignore="LockedOrientationActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
